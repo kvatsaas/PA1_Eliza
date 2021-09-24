@@ -46,7 +46,7 @@ namespace PA1_ELIZA
          * -A substring of three or more characters repeated three times in the same word
          * This is obviously not particularly robust, but seems a decent rudimentary approach without requiring an extremely long or complex regex.
          */
-        static readonly string rx_gibberish = @"\b[aeiou]{4,}\b|\b[aeiou]{3,}\w*[aeiou]{3,}\b|\b[bcdfghjklmnpqrstvwxyz]{5,}\b|\b[bcdfghjklmnpqrstvwxyz]{4,}\w*[bcdfghjklmnpqrstvwxyz]{4,}\b|\w{16,}|\w*(?<three>\w{3,})\w*\k<three>\w*\k<three>\w*\b|\w*(?<four>\w{4,5})\w*\k<four>\w*";
+        static readonly string rx_gibberish = @"\b\w*[aeiou]{4,}\w*\b|\b\w*[aeiou]{3,}\w*[aeiou]{3,}\w*\b|\b\w*[bcdfghjklmnpqrstvwxyz]{5,}\w*\b|\b\w*[bcdfghjklmnpqrstvwxyz]{4,}\w*[bcdfghjklmnpqrstvwxyz]{4,}\w*\b|\w{16,}|\w*(?<three>\w{3,})\w*\k<three>\w*\k<three>\w*\b|\w*(?<four>\w{4,5})\w*\k<four>\w*";
 
         /* Elementary regex that defines an elementary-age filter. More of a proof-of-concept to avoid turning in a program full of
          * slurs, so I didn't bother trying to capture all the compound words while avoiding words like 'scrap' or 'buttress'
