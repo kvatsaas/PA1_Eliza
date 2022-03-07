@@ -1,5 +1,4 @@
 # PA1_Eliza
-PA1_Eliza
 
 Below is the text of the original assignment description from CS 4242 Natural Language Processing at the Universeity of Minnesota - Duluth. The source code includes further commentary on the implementation, and the textbook referenced can be found here: https://web.stanford.edu/~jurafsky/slp3/
 
